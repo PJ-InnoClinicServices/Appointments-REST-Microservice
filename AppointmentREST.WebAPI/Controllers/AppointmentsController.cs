@@ -8,15 +8,19 @@ namespace AppointmentREST.Controllers
     [ApiController]
     public class AppointmentsController(IAppointmentService appointmentService) : ControllerBase
     {
-        [HttpGet]
+        [HttpGet("all")]
         public async Task<IActionResult> GetAll()
         {
             var appointments = await appointmentService.GetAllAppointments();
             return Ok(appointments);
         }
         
-        [HttpGet]
-        public async Task<IActionResult> Get([FromQuery] Guid? patientId, [FromQuery] Guid? doctorId, [FromQuery] Guid? placeId, [FromQuery] DateTime? appointmentDate)
+        [HttpGet("filter")]
+        public async Task<IActionResult> GetFiltered(
+            [FromQuery] Guid? patientId, 
+            [FromQuery] Guid? doctorId, 
+            [FromQuery] Guid? placeId, 
+            [FromQuery] DateTime? appointmentDate)
         {
             if (patientId.HasValue)
             {

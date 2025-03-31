@@ -1,5 +1,6 @@
 using AppointmentREST.BusinessLogic.AppExtensions;
 using AppointmentREST.Extension;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,7 +19,8 @@ var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
+    app.UseSwagger(options => options.OpenApiVersion =
+        Microsoft.OpenApi.OpenApiSpecVersion.OpenApi2_0);
     app.UseSwaggerUI();
     app.UseDeveloperExceptionPage();
 }

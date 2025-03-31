@@ -11,5 +11,6 @@ public abstract class MapperRegistration
     {
         TinyMapper.Bind<CreateAppointmentDto, AppointmentEntity>();
         TinyMapper.Bind<UpdateAppointmentDto, AppointmentEntity>();
+        TinyMapper.Bind<AppointmentEntity, AppointmentDto>();
     }
 }
