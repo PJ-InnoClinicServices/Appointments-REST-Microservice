@@ -1,0 +1,23 @@
+﻿services:
+  appointmentrest.webapi:
+    image: appointmentrest.webapi
+    build:
+      context: .
+      dockerfile: AppointmentREST.WebAPI/Dockerfile
+    ports:
+      - 8085:8080
+  
+  database:
+    image: postgres:latest
+    container_name: appointmentsdb
+    environment:
+      - POSTGRES_DB=appointmentsdb
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=admin
+    volumes:
+      - appointmentsdb_volume:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+volumes:
+  appointmentsdb_volume:
