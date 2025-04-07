@@ -23,6 +23,7 @@ if (app.Environment.IsDevelopment())
         Microsoft.OpenApi.OpenApiSpecVersion.OpenApi2_0);
     app.UseSwaggerUI();
     app.UseDeveloperExceptionPage();
+    app.ApplyMigrations();
 }
 app.MapControllers();
 

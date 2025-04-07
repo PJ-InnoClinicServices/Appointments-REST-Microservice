@@ -8,6 +8,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentREST.BusinessLog
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentREST.Shared", "AppointmentREST.Shared\AppointmentREST.Shared.csproj", "{6224C069-8EEC-4E70-A844-CC46FC9D134F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{01E4F258-9A40-48CA-9DD8-6F0C0CA13ECE}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
