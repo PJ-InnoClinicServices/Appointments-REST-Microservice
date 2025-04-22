@@ -1,6 +1,5 @@
 ﻿using AppointmentREST.DataAccess;
 using Microsoft.EntityFrameworkCore;
-
 namespace AppointmentREST.Extension;
 
 public static class MigrationExtensions
@@ -11,7 +10,6 @@ public static class MigrationExtensions
 
         using ApplicationDbContext context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
         
-
         context.Database.Migrate();
     }
 }
