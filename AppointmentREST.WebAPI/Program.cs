@@ -32,7 +32,6 @@ if (app.Environment.IsDevelopment() || app.Environment.EnvironmentName == "Conta
         Microsoft.OpenApi.OpenApiSpecVersion.OpenApi2_0);
     app.UseSwaggerUI();
     app.UseDeveloperExceptionPage();
-
     app.ApplyMigrations();
 }
 
