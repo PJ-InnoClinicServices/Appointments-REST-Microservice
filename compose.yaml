@@ -1,11 +1,12 @@
 ﻿services:
   appointmentrest.webapi:
-    image: appointmentrest.webapi
+    image: appointments-rest-microservice
     build:
       context: .
       dockerfile: AppointmentREST.WebAPI/Dockerfile
     environment:
-      - ASPNETCORE_ENVIRONMENT=Container
-    ports:
-      - 8085:8080
+      - ASPNETCORE_ENVIRONMENT=env
+      - JWT_SigningKey=key
+      - NEON_DB_PASSWORD=password
+
   

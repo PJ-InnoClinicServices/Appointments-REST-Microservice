@@ -5,11 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"), npgsqlOptions =>
-    {
-        npgsqlOptions.MigrationsHistoryTable("__EFMigrationsHistory_Appointments");
-    }));
+builder.Services.AddDbContextService(builder.Configuration);
 
 // Automapper / TinyMapper
 MapperRegistration.AddTinyMapper(builder.Services);
