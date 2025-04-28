@@ -1,10 +1,9 @@
 ﻿using AppointmentREST.Shared.Enum;
 
-namespace AppointmentREST.Shared.DTO;
+namespace AppointmentREST.Shared.DTO.Appointment;
 
-public record AppointmentDto
+public record UpdateAppointmentDto
 {
-    public Guid Id { get; set; }
     public DateTime AppointmentDate { get; set; }
     public string Reason { get; set; }
     public AppointmentStatus Status { get; set; }

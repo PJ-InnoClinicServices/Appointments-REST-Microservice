@@ -1,4 +1,5 @@
 ﻿using AppointmentREST.Shared.DTO;
+using AppointmentREST.Shared.DTO.Appointment;
 using AppointmentREST.Shared.Entites;
 using Microsoft.Extensions.DependencyInjection;
 using Nelibur.ObjectMapper;

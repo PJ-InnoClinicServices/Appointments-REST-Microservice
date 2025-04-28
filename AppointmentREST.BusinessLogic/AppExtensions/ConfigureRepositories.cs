@@ -1,4 +1,6 @@
-﻿using AppointmentREST.DataAccess.Interfaces;
+﻿using AppointmentREST.BusinessLogic.Interfaces;
+using AppointmentREST.BusinessLogic.Services;
+using AppointmentREST.DataAccess.Interfaces;
 using AppointmentREST.DataAccess.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -9,5 +11,6 @@ public static class ConfigureRepositories
     public static void AddRepositories(this IServiceCollection services)
     {
         services.AddScoped<IAppointmentRepository, AppointmentRepository>();
+        services.AddScoped<IAppointmentResultRepository, AppointmentResultRepository>();
     }
 }

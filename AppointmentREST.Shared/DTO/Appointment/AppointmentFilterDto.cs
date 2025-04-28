@@ -1,4 +1,4 @@
-﻿namespace AppointmentREST.Shared.DTO;
+﻿namespace AppointmentREST.Shared.DTO.Appointment;
 
 public record AppointmentFilterDto
 {
