@@ -2,7 +2,7 @@
 
 namespace AppointmentREST.Shared.DTO.AppointmentResult;
 
-public class AppointmentResultDto
+public record AppointmentResultDto
 {
     public Guid Id { get; set; }
     public DateTime AppointmentDate { get; set; }

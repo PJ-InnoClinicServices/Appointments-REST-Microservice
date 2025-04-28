@@ -1,6 +1,6 @@
 ﻿using AppointmentREST.Shared.Enum;
 
-namespace AppointmentREST.Shared.DTO;
+namespace AppointmentREST.Shared.DTO.Appointment;
 
 public record CreateAppointmentDto
 {

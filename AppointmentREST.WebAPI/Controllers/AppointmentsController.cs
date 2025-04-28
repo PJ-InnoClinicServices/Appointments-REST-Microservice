@@ -1,5 +1,6 @@
 ﻿using AppointmentREST.BusinessLogic.Interfaces;
 using AppointmentREST.Shared.DTO;
+using AppointmentREST.Shared.DTO.Appointment;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AppointmentREST.Controllers

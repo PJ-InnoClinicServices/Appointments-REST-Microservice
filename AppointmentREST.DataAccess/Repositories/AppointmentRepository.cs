@@ -1,5 +1,6 @@
 ﻿using AppointmentREST.DataAccess.Interfaces;
 using AppointmentREST.Shared.DTO;
+using AppointmentREST.Shared.DTO.Appointment;
 using AppointmentREST.Shared.Entites;
 using Microsoft.EntityFrameworkCore;
 
